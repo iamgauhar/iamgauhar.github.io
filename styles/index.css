@@ -1,0 +1,219 @@
+/* ---- reset ---- */
+/* @import url('https://fonts.googleapis.com/css2?family=Martel&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    margin: 0;
+    /* font: normal 75% Arial, Helvetica, sans-serif; */
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+
+  }
+  canvas {
+    display: block;
+    vertical-align: bottom;
+    /* width: 50%; */
+  }
+  /* ---- tsparticles container ---- */
+  #tsparticles {
+    position: sticky;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-sizing: border-box;
+    padding: 60px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #00ff94;
+
+  }
+
+  #tsparticles h1{
+    /* z-index: 20;  */
+    line-height: 130%;
+    /* word-spacing: 8px; */
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: #00ff94;
+  }
+#sub-profile{
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+  #tsparticles> *{
+    border: 1px solid white;
+  }
+
+  #hire_me{
+    /* border: 1px solid white; */
+    width: fit-content;
+    z-index: 99;
+    position: relative;
+    /* background: #fff; */
+  }
+
+#hire_btn{
+  position: relative;
+  padding: .8rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background: #00ff94;
+  cursor: pointer;
+  /* border: 2px solid rgb(173, 35, 35); */
+  /* outline: rgb(248, 146, 146); */
+}
+
+#hire_btn:hover{
+  /* background: rgb(221, 82, 82); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+  color: aliceblue;
+transition: all .3s;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#right{
+    height: 200vh;
+    /* background: rgb(181, 70, 233); */
+    z-index: 90;
+}
+
+#picture{
+  height: 100vh;
+
+}
+
+#picture> img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#social{
+  width: fit-content;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+#social>a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social_icons{
+  width: 36px;
+  cursor: pointer;
+}
+
+.social_icons:hover{
+  transform: translateY(-4px);
+  transition: all .3s;
+  scale: 1.1;
+
+}
+
+/* CSS */
+.button-85 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-85:hover{
+  transform: translateY(-4px);
+  transition: all .3s;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+
+@media screen and (min-device-width: 1024px){
+  #container{
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #tsparticles{
+    width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    top: auto;
+  }
+}
