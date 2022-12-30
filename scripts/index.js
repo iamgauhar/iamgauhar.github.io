@@ -1,5 +1,45 @@
 // const EasyMDE = require("easymde")
 
+// UPDATE: I was able to get this working again... Enjoy!
+
+var cursor = document.querySelector(".cursor");
+var cursorinner = document.querySelector(".cursor2");
+var a = document.querySelectorAll("a");
+
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+});
+
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + "px";
+  cursorinner.style.top = y + "px";
+});
+
+document.addEventListener("mousedown", function () {
+  cursor.classList.add("click");
+  cursorinner.classList.add("cursorinnerhover");
+});
+
+document.addEventListener("mouseup", function () {
+  cursor.classList.remove("click");
+  cursorinner.classList.remove("cursorinnerhover");
+});
+
+a.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
+
+// Mousse js ending
+
 tsParticles.load("tsparticles", {
   fps_limit: 60,
   interactivity: {
@@ -83,8 +123,16 @@ tsParticles.load("tsparticles", {
 //     console.log(data)
 //   })
 
-// Navbar script
+document.querySelector("#resume").addEventListener("click", () => {
+  // location.href = "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link";
+  window.open(
+    "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link",
+    "_blank"
+  );
+});
 
+// Navbar script
+// document.querySelector("canvas").style.position = "relative";
 const nav = function () {
   document.querySelector(".menu-link").addEventListener("click", (e) => {
     e.preventDefault();
