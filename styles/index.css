@@ -214,16 +214,15 @@ body {
 /* ------- { About section} -------- */
 
 #nav-menu {
+  position: relative;
+  height: 100vh;
 }
 .card {
   box-sizing: border-box;
-  /* width: 100vw; */
-  height: 100vh;
   border-radius: 4px;
   display: flex;
   gap: 5px;
   padding: 60px 0;
-  /* z-index: 1111; */
 }
 
 .card p {
@@ -233,11 +232,18 @@ body {
   cursor: pointer;
   border-radius: 2px;
   transition: all 0.5s;
-  background: #212121;
-  border: 1px solid #ffffff;
+  /* background: #ffffffc9; */
+  opacity: 50%;
+  /* border: 1px solid #ffffff; */
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(255, 255, 255, 0.87);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .card p:hover {
@@ -251,8 +257,10 @@ body {
   transform: rotate(-90deg);
   transition: all 0.5s;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #1216f3;
   letter-spacing: 0.1em;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .card p:hover span {
