@@ -8,13 +8,13 @@ document.querySelector("#resume").addEventListener("click", () => {
 
 // Navbar script
 // document.querySelector("canvas").style.position = "relative";
-const nav = function () {
-  document.querySelector(".menu-link").addEventListener("click", (e) => {
-    e.preventDefault();
+// const nav = function () {
+//   document.querySelector(".menu-link").addEventListener("click", (e) => {
+//     e.preventDefault();
 
-    document.querySelector(".menu-overlay").classList.toggle("open");
-    document.querySelector(".menu").classList.toggle("open");
-  });
-};
+//     document.querySelector(".menu-overlay").classList.toggle("open");
+//     document.querySelector(".menu").classList.toggle("open");
+//   });
+// };
 
-nav();
+// nav();
