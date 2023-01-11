@@ -5,87 +5,158 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#3399ff">
+    <meta name="theme-color" content="#5cadff">
     <title>Mohammad Gauhar | Web Developer</title>
     <link rel="shortcut icon" href="./icons/icon cir 2.png" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/index.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-    <!-- -----------------------{  } -->
-    <!-- tsParticles container -->
-
-
-    <div class='ripple-background'>
-        <div class='circle xxlarge shade1'></div>
-        <div class='circle xlarge shade2'></div>
-        <div class='circle large shade3'></div>
-        <div class='circle mediun shade4'></div>
-        <div class='circle small shade5'></div>
-    </div>
-    <div id="home">
-        <div id="profile">
-            <h1>Hello. I'm a full stack web developer</h1>
-            <div id="sub-profile">
-                <p>
-                    I'm Mohammad Gauhar. I used to develop full-stack web applications
-
-                    using modern web technologies.
-                </p>
+    <!-- Navbar -->
+    <div class="headerSection">
+        <header id="header" class="header lr-pad">
+            <div class="logo">
+                <h1>MG<span>.</span></h1>
             </div>
-            <div id="hire_me">
-                <!-- <button id="hire_btn">Hire me!</button> -->
-                <button class="button-81 hire-btn" role="button">
-                    <span class="text">Hire me!</span>
-                </button>
-                <!-- <button class="button-28" role="button">Button 28</button> -->
-            </div>
-        </div>
-        <div id="social">
-            <!-- <button class="button-85" role="button">Resume</button> -->
-            <button class="button-81" role="button">
-                <span id="resume" class="text">Resume</span>
-            </button>
-            <a id="contact-github" target="_blank" href="https://www.github.com/iamgauhar"><i class="bx bxl-github"
-                    style="color: #1416a8"></i></a>
-            <a id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/iamgauhar"><i
-                    class="bx bxl-linkedin-square" style="color: #1416a8"></i></a>
-            <a id="contact-email" href="mailto:iamgauhar@gmail.com"><i class="bx bx-envelope"
-                    style="color: #1416a8"></i></a>
-            <a id="contact-phone" href="tel:+918896039057"><i class="bx bx-phone-call" style="color: #1416a8"></i></a>
-        </div>
-
-    </div>
-
-    <!-- ------------{ it's me } -->
-    <div id="about">
-        <h1>About me</h1>
-        <div class="about section">
-            <div class="profile">
-                <div id="pic">
-                    <img src="./icons/No background MG IMG.png" alt="Picture">
+            <div class="menu">
+                <ul class="menuList" onclick="closeMenu()">
+                    <ion-icon id="close" name="close-outline" onclick="closeMenu()"></ion-icon>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="./images/aboutImg.jpg" download="aboutImg">Resume</a>
+                    </li>
+                </ul>
+                <div class="menubar" onclick="openMenu()">
+                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>
-            <div class="profile">
-                <p class="about-text"> <span class="strong-text">Hi!</span><br><br>
-                    My name is <strong>Mohammad Gauhar</strong>, and I am a full-stack web developer. I recently
-                    graduated with a degree in Bachelor of
-                    Computer Application and have also completed certification in web development over the past few
-                    months. I am proficient
-                    in languages such as HTML, CSS, and JavaScript and have experience using frameworks such as Node.js,
-                    Express.js,
-                    MongoDB, etc.
-                </p>
+        </header>
+    </div>
+
+    <!-- -----------------------{  } -->
+    <!-- tsParticles container -->
+    <div id="container">
+
+        <div class='ripple-background'>
+            <div class='circle xxlarge shade1'></div>
+            <div class='circle xlarge shade2'></div>
+            <div class='circle large shade3'></div>
+            <div class='circle mediun shade4'></div>
+            <div class='circle small shade5'></div>
+        </div>
+        <div id="home" class="section-height">
+            <div id="profile" data-aos="zoom-in">
+                <h1>Hello. I'm a full stack web developer</h1>
+                <div id="sub-profile" data-aos="zoom-in">
+                    <p>
+                        I'm Mohammad Gauhar. I used to develop full-stack web applications
+
+                        using modern web technologies.
+                    </p>
+                </div>
+                <div id="hire_me" data-aos="zoom-in">
+                    <!-- <button id="hire_btn">Hire me!</button> -->
+                    <button class="button-81 hire-btn" role="button">
+                        <span class="text">Hire me!</span>
+                    </button>
+                    <!-- <button class="button-28" role="button">Button 28</button> -->
+                </div>
+            </div>
+            <div id="social" data-aos="zoom-in">
+                <!-- <button class="button-85" role="button">Resume</button> -->
+                <button class="button-81" role="button">
+                    <span id="resume" class="text">Resume</span>
+                </button>
+                <a id="contact-github" target="_blank" href="https://www.github.com/iamgauhar"><i class="bx bxl-github"
+                        style="color: #1416a8"></i></a>
+                <a id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/iamgauhar"><i
+                        class="bx bxl-linkedin-square" style="color: #1416a8"></i></a>
+                <a id="contact-email" href="mailto:iamgauhar@gmail.com"><i class="bx bx-envelope"
+                        style="color: #1416a8"></i></a>
+                <a id="contact-phone" href="tel:+918896039057"><i class="bx bx-phone-call"
+                        style="color: #1416a8"></i></a>
+            </div>
+
+        </div>
+
+        <!-- ------------{ it's me } -->
+        <div id="about" class="section-height">
+            <h1>About me</h1>
+            <div class="about section">
+                <div class="profile" data-aos="zoom-in">
+                    <div id="pic">
+                        <img src="./icons/No background MG IMG.png" alt="Picture">
+                    </div>
+                </div>
+                <div class="profile" data-aos="zoom-in">
+                    <p class="about-text"> <span class="strong-text">Hi!</span><br><br>
+                        My name is <strong>Mohammad Gauhar</strong>, and I am a full-stack web developer. I recently
+                        graduated with a degree in Bachelor of
+                        Computer Application and have also completed certification in web development over the past few
+                        months. I am proficient
+                        in languages such as HTML, CSS, and JavaScript and have experience using frameworks such as
+                        Node.js,
+                        Express.js,
+                        MongoDB, etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h1>My Skills</h1>
+            <div class="skillArea">
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/html-5-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in" data-aos="zoom-in">
+                    <img src="./icons/css-3-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/tailwindcss-icon-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/js-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/nodejs-icon-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/express-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/mongodb-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/npm-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/socket-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/redis-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/github-color-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons//netlify-svgrepo-com.svg" alt="">
+                </div>
             </div>
         </div>
     </div>
 
-
-
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./scripts/index.js"></script>
 
 </html>
