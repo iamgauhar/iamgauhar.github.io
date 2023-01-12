@@ -427,15 +427,12 @@ li {
   align-items: center;
   gap: 20px;
   padding: 1rem;
+  transition: all 0.5s;
 }
 
 .skill-box {
   height: 180px;
-  /* border: 1px solid; */
   padding: 1rem;
-  transition: 0.5s;
-
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.42);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -445,14 +442,66 @@ li {
   cursor: pointer;
 }
 
-.skill-box:hover {
-  scale: 1.1;
-}
-
 .skill-box img {
   height: 100%;
   width: 100%;
-  /* object-fit: cover; */
+  transition: all 0.5s;
+}
+
+.skill-box img:hover {
+  scale: 1.1;
+}
+#github-stats-card {
+  /* height: 100vh; */
+  /* padding-bottom: 2rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* justify-content: space-around; */
+}
+#github-stats-card h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  padding-top: 2rem;
+}
+
+.git-stats {
+  /* border: 1px solid red; */
+  /* From https://css.glass */
+  background: rgba(81, 78, 78, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.808);
+  cursor: pointer;
+}
+
+.git-stats img {
+  width: 100%;
+  /* height: 100; */
+}
+
+.git-stats-2 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  background: rgba(81, 78, 78, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.856);
+  cursor: pointer;
+}
+
+.stats img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -639,5 +688,23 @@ li {
 
   .skill-box {
     height: 120px;
+  }
+
+  #github-stats-card h1 {
+    font-size: 28px;
+    padding-top: 1rem;
+  }
+
+  #github-stats-card {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .git-stats-2 {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    /* justify-content: center;
+  align-items: center; */
   }
 }
