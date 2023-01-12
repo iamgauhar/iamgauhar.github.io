@@ -21,16 +21,16 @@
             <div class="logo">
                 <h1>MG<span>.</span></h1>
             </div>
-            <div class="menu">
+            <div class="menu nav-menu">
                 <ul class="menuList" onclick="closeMenu()">
                     <ion-icon id="close" name="close-outline" onclick="closeMenu()"></ion-icon>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#github-stats-card">Statistics</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
+                    <li class="nav-link home"><a href="#home">Home</a></li>
+                    <li class="nav-link about"><a href="#about">About</a></li>
+                    <li class="nav-link skills"><a href="#skills">Skills</a></li>
+                    <li class="nav-link "><a href="#github-stats-card">Statistics</a></li>
+                    <li class="nav-link projects"><a href="#projects">Projects</a></li>
+                    <li class="nav-link contact"><a href="#contact">Contact</a></li>
+                    <li class="nav-link resume">
                         <a href="https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download">Resume
                             <i class='bx bx-arrow-to-bottom'></i></a>
                     </li>
@@ -166,17 +166,179 @@
                         <img title="🔥 Get streak stats for your profile at git.io/streak-stats"
                             alt="Mohammad Gauhar's streak"
                             src="https://github-readme-streak-stats.herokuapp.com/?user=SubhamRaoniar28&theme=black-ice&hide_border=true&stroke=0000&background=00000000" />
+                    </a>
                 </div>
-                <div class="stats">
-                    <a href="https://github.com/iamgauhar/github-readme-streak-stats">
-                        <img title="🔥 Get streak stats for your profile at git.io/streak-stats"
-                            alt="Mohammad Gauhar's streak"
-                            src="https://github-readme-stats.vercel.app/api?username=iamgauhar&show_icons=true&bg_color=00000000" />
-                </div>
+
             </div>
 
         </div>
+
+        <div id="projects">
+            <h1>My Projects</h1>
+            <div id="projectsArea">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/myntra jpg.png" alt="">
+                    </div>
+                    <h3 class="project-title">Myntra Clone</h3>
+                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ab
+                        adipisci! Ipsum laudantium porro fugit?</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5' style='color:#ff3c00'></i>
+                        <i class='bx bxl-css3' style='color:#0039ff'></i>
+                        <i class='bx bxl-javascript' style='color:#ffdd00'></i>
+                        <i class='bx bxl-nodejs' style='color:#13e01f'></i>
+                        <i class='bx bxl-mongodb' style='color:#0ab914'></i>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://iamgauhar.github.io/Myntra-Clone/" target="_blank">
+                            <button class="launcher">
+                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <span>Launch</span>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/iamgauhar/Myntra-Clone" target="_blank">
+                            <button class="cssbuttons-io">
+                                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                            fill="currentColor"></path>
+                                    </svg> Code</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/myntra jpg.png" alt="">
+                    </div>
+                    <h3 class="project-title">Myntra Clone</h3>
+                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ab
+                        adipisci! Ipsum laudantium porro fugit?</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5' style='color:#ff3c00'></i>
+                        <i class='bx bxl-css3' style='color:#0039ff'></i>
+                        <i class='bx bxl-javascript' style='color:#ffdd00'></i>
+                        <i class='bx bxl-nodejs' style='color:#13e01f'></i>
+                        <i class='bx bxl-mongodb' style='color:#0ab914'></i>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://iamgauhar.github.io/Myntra-Clone/" target="_blank">
+                            <button class="launcher">
+                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <span>Launch</span>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/iamgauhar/Myntra-Clone" target="_blank">
+                            <button class="cssbuttons-io">
+                                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                            fill="currentColor"></path>
+                                    </svg> Code</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/myntra jpg.png" alt="">
+                    </div>
+                    <h3 class="project-title">Myntra Clone</h3>
+                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ab
+                        adipisci! Ipsum laudantium porro fugit?</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5' style='color:#ff3c00'></i>
+                        <i class='bx bxl-css3' style='color:#0039ff'></i>
+                        <i class='bx bxl-javascript' style='color:#ffdd00'></i>
+                        <i class='bx bxl-nodejs' style='color:#13e01f'></i>
+                        <i class='bx bxl-mongodb' style='color:#0ab914'></i>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://iamgauhar.github.io/Myntra-Clone/" target="_blank">
+                            <button class="launcher">
+                                <svg height="20" width="24" viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <span>Launch</span>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/iamgauhar/Myntra-Clone" target="_blank">
+                            <button class="cssbuttons-io">
+                                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                            fill="currentColor"></path>
+                                    </svg> Code</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contactSection">
+            <h1>Contact Me</h1>
+            <div class="contactArea">
+                <div class="contactLeft contactSide">
+                    <h2>Get in <span>touch</span></h2>
+                    <p class="mail">
+                        <ion-icon name="mail-open-outline"></ion-icon> iamgauhar@gmail.com
+                    </p>
+                    <p><ion-icon name="call-outline"></ion-icon> 91+ 8896039057</p>
+                    <div class="getInTouch">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                    <div class="cvLoad">
+                        <a href="https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download"
+                            download="MG CV."><ion-icon name="arrow-down-outline"></ion-icon>
+                            Download CV</a>
+                    </div>
+                </div>
+                <div class="contactRight contactSide">
+                    <form action="#">
+                        <input type="text" placeholder="Name" autocomplete="off" required /><br />
+                        <input type="email" placeholder="Email" autocomplete="off" required /><br />
+                        <textarea cols="10" rows="5" placeholder="Message" autocomplete="off" required></textarea><br />
+
+                        <div class="subBtn"><input type="submit" value="Send" /></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footerSection">
+                <p>Made with ❤️ by Mohammad Gauhar / @iamgauhar</p>
+                <p>Copyright © <span id="year"></span> All Rights Reserved</p>
+            </div>
+        </div>
+
     </div>
+
 
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
