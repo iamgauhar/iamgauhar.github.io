@@ -83,7 +83,7 @@ li {
 }
 .menu ul li a:hover {
   transform: translateY(-4px);
-  background: -webkit-radial-gradient(#16d686, #53e5ef);
+  background: -webkit-radial-gradient(#33a4e6, #2b48ec);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -217,6 +217,7 @@ li {
   -webkit-backdrop-filter: blur(3.5px);
   border: 1px solid #474ae0;
   padding: 6px;
+  gap: 4px;
 }
 
 #social > a {
