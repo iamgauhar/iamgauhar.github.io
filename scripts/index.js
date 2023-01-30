@@ -13,7 +13,7 @@ const openMenu = () => {
   menubar.style.left = "0";
 };
 const closeMenu = () => {
-  menubar.style.left = "-100%";
+  menubar.style.left = "-110%";
 };
 
 const goTo = () => {
