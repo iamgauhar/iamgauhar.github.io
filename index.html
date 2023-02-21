@@ -3,98 +3,354 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="description"
+        content="Hi, My name is Mohammad Gauhar, and I am a full-stack web developer. This is my portfolio website, where I put my knowledge, skills, and personal projects.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Node.js, Express.js, MongoDB">
+    <meta name="author" content="Mohammad Gauhar">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#3399ff">
+    <meta name="theme-color" content="#5cadff">
     <title>Mohammad Gauhar | Web Developer</title>
     <link rel="shortcut icon" href="./icons/icon cir 2.png" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/index.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
 
-    <!-- -----------------------{  } -->
-    <!-- tsParticles container -->
-
-
-    <div class='ripple-background'>
-        <div class='circle xxlarge shade1'></div>
-        <div class='circle xlarge shade2'></div>
-        <div class='circle large shade3'></div>
-        <div class='circle mediun shade4'></div>
-        <div class='circle small shade5'></div>
-    </div>
-    <div id="home">
-        <div id="profile">
-            <h1>Hello. I'm a full stack web developer</h1>
-            <div id="sub-profile">
-                <p>
-                    I'm Mohammad Gauhar. I used to develop full-stack web applications
-
-                    using modern web technologies.
-                </p>
+    <!-- Navbar -->
+    <div class="headerSection">
+        <header id="header" class="header lr-pad">
+            <div class="logo">
+                <h1>MG<span style="color: #1cf72b;">.</span></h1>
             </div>
-            <div id="hire_me">
-                <!-- <button id="hire_btn">Hire me!</button> -->
-                <button class="button-81 hire-btn" role="button">
-                    <span class="text">Hire me!</span>
-                </button>
-                <!-- <button class="button-28" role="button">Button 28</button> -->
-            </div>
-        </div>
-        <div id="social">
-            <!-- <button class="button-85" role="button">Resume</button> -->
-            <button class="button-81" role="button">
-                <span id="resume" class="text">Resume</span>
-            </button>
-            <a id="contact-github" target="_blank" href="https://www.github.com/iamgauhar"><i class="bx bxl-github"
-                    style="color: #1416a8"></i></a>
-            <a id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/iamgauhar"><i
-                    class="bx bxl-linkedin-square" style="color: #1416a8"></i></a>
-            <a id="contact-email" href="mailto:iamgauhar@gmail.com"><i class="bx bx-envelope"
-                    style="color: #1416a8"></i></a>
-            <a id="contact-phone" href="tel:+918896039057"><i class="bx bx-phone-call" style="color: #1416a8"></i></a>
-        </div>
-
-    </div>
-
-    <!-- ------------{ it's me } -->
-    <div id="about">
-        <h1>About me</h1>
-        <div class="about section">
-            <div class="profile">
-                <div id="pic">
-                    <img src="./icons/No background MG IMG.png" alt="Picture">
+            <div class="menu nav-menu">
+                <ul class="menuList" onclick="closeMenu()">
+                    <ion-icon id="close" name="close-outline" onclick="closeMenu()"></ion-icon>
+                    <li class="nav-link home"><a href="#home">Home</a></li>
+                    <li class="nav-link about"><a href="#about">About</a></li>
+                    <li class="nav-link skills"><a href="#skills">Skills</a></li>
+                    <li class="nav-link "><a href="#github-stats-card">Statistics</a></li>
+                    <li class="nav-link projects"><a href="#projects">Projects</a></li>
+                    <li class="nav-link contact"><a href="#contact">Contact</a></li>
+                    <li class="nav-link resume">
+                        <a href="https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download">Resume
+                            <i class='bx bx-arrow-to-bottom'></i></a>
+                    </li>
+                </ul>
+                <div class="menubar" onclick="openMenu()">
+                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>
-            <div class="profile">
-                <p class="about-text"> <span class="strong-text">Hi!</span><br><br>
-                    My name is <strong>Mohammad Gauhar</strong>, and I am a full-stack web developer. I recently
-                    graduated with a degree in Bachelor of
-                    Computer Application and have also completed certification in web development over the past few
-                    months. I am proficient
-                    in languages such as HTML, CSS, and JavaScript and have experience using frameworks such as Node.js,
-                    Express.js,
-                    MongoDB, etc.
-                </p>
-            </div>
-        </div>
+        </header>
     </div>
 
+    <!-- -----------------------{  } -->
+    <!-- tsParticles container -->
+    <div id="container">
+
+        <div class='ripple-background'>
+            <div class='circle xxlarge shade1'></div>
+            <div class='circle xlarge shade2'></div>
+            <div class='circle large shade3'></div>
+            <div class='circle mediun shade4'></div>
+            <div class='circle small shade5'></div>
+        </div>
+        <div id="home" class="section-height">
+            <div id="profile" data-aos="zoom-in">
+                <h1>Hello. I'm a full stack web developer</h1>
+                <div id="sub-profile" data-aos="zoom-in">
+                    <p>
+                        I'm Mohammad Gauhar. I used to develop full-stack web applications
+
+                        using modern web technologies.
+                    </p>
+                </div>
+                <div id="hire_me" data-aos="zoom-in">
+                    <!-- <button id="hire_btn">Hire me!</button> -->
+                    <button class="button-81 hire-btn" role="button">
+                        <span class="text">Hire me!</span>
+                    </button>
+                    <!-- <button class="button-28" role="button">Button 28</button> -->
+                </div>
+            </div>
+            <div id="social">
+                <!-- <button class="button-85" role="button">Resume</button> -->
+                <button class="button-81" role="button">
+                    <span id="resume" class="text">Resume</span>
+                </button>
+                <a id="contact-github" target="_blank" href="https://www.github.com/iamgauhar"><i
+                        class="bx bxl-github"></i></a>
+                <a id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/iamgauhar"><i
+                        class="bx bxl-linkedin-square"></i></a>
+                <a id="contact-email" href="mailto:iamgauhar@gmail.com"><i class="bx bx-envelope"></i></a>
+                <a id="contact-phone" href="tel:+918896039057"><i class="bx bx-phone-call"></i></a>
+                <a href="https://wa.me/918896039057"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+
+        </div>
+
+        <!-- ------------{ it's me } -->
+        <div id="about" class="section-height">
+            <h1 class="title">About me</h1>
+            <div class="about section">
+                <div class="profile" data-aos="zoom-in">
+                    <div id="pic">
+                        <img src="./icons/No background MG IMG.png" alt="Picture">
+                    </div>
+                </div>
+                <div class="profile" data-aos="zoom-in">
+                    <p class="about-text"> <span class="strong-text">Hi!</span><br><br>
+                        My name is <strong>Mohammad Gauhar</strong>, and I am a full-stack web developer. I recently
+                        graduated with a degree in Bachelor of
+                        Computer Application and have also completed certification in web development over the past few
+                        months. I am proficient
+                        in languages such as HTML, CSS, and JavaScript and have experience using frameworks such as
+                        Node.js,
+                        Express.js,
+                        MongoDB, etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h1 class="title">My Skills</h1>
+            <div class="skillArea">
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/html-5-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in" data-aos="zoom-in">
+                    <img src="./icons/css-3-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/tailwindcss-icon-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/js-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/nodejs-icon-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/express-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/mongodb-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/npm-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/socket-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/redis-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons/github-color-svgrepo-com.svg" alt="">
+                </div>
+                <div class="skill-box" data-aos="zoom-in">
+                    <img src="./icons//netlify-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="github-stats-card">
+            <h1 class="title">Github Statistics</h1>
+
+            <div class="git-stats" data-aos="zoom-in">
+                <img src="https://github-readme-activity-graph.cyclic.app/graph?username=iamgauhar&bg_color=00000000&color=ffffff&line=00f549&point=ffffff&area=true&hide_border=true"
+                    alt="">
+            </div>
+            <div class="git-stats-2" data-aos="zoom-in">
+                <div class="stats">
+                    <!-- <a href="https://github.com/iamgauhar/github-readme-streak-stats">
+                        <img title="🔥 Get streak stats for your profile at git.io/streak-stats"
+                            alt="Mohammad Gauhar's streak"
+                            src="https://github-readme-streak-stats.herokuapp.com/?user=SubhamRaoniar28&theme=black-ice&hide_border=true&stroke=0000&background=00000000" />
+                    </a> -->
+
+                    <a href="https://github.com/iamgauhar/github-readme-streak-stats">
+                        <img title="🔥 Get streak stats for your profile at git.io/streak-stats"
+                            alt="Mohammad Gauhar's streak"
+                            src="https://github-readme-streak-stats.herokuapp.com/?user=SubhamRaoniar28&theme=black-ice&hide_border=true&stroke=0000&background=00000001" />
+                    </a>
+                </div>
+                <div class="stats">
+                    <a href="https://github.com/iamgauhar/github-readme-stats"><img alt="Mohammad Gauhar's Github Stats"
+                            src="https://github-readme-stats.vercel.app/api?username=iamgauhar&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=00000001" /></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="projects">
+            <h1 class="title">My Projects</h1>
+            <div id="projectsArea">
+
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="./images/nyka.jpg" alt="">
+                    </div>
+                    <h3 class="project-title">Nykaa.com Clone</h3>
+                    <p class="project-description">Nykaa is an e-commerce website. This site made by 4 members in just 5
+                        days.functionalities were :
+                        Register/Login using JWT, Sorting and Filtering in the backend, Cart and Wish List and many
+                        more.</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5' style='color:#ff3c00'></i>
+                        <i class='bx bxl-css3' style='color:#0039ff'></i>
+                        <i class='bx bxl-javascript' style='color:#ffdd00'></i>
+                        <i class='bx bxl-nodejs' style='color:#13e01f'></i>
+                        <i class='bx bxl-mongodb' style='color:#0ab914'></i>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://thriving-sunflower-729b21.netlify.app/" target="_blank">
+                            <button class="launcher">
+                                <span>Visit</span>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/iamgauhar/Nykaa-Clone" target="_blank">
+                            <button class="launcher">
+                                <span>Code</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="./images/fresh.jpg" alt="">
+                    </div>
+                    <h3 class=" project-title">Fresh Aahar</h3>
+                    <p class="project-description">Feresh Aahar is a website where you can find vegitarien food and
+                        retaurant. It is made by 3 members within 5 days.</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5' style='color:#ff3c00'></i>
+                        <i class='bx bxl-css3' style='color:#0039ff'></i>
+                        <i class='bx bxl-javascript' style='color:#ffdd00'></i>
+                        <i class='bx bxl-nodejs' style='color:#13e01f'></i>
+                        <i class='bx bxl-mongodb' style='color:#0ab914'></i>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://freshahaar.netlify.app/" target="_blank">
+                            <button class="launcher">
+                                <span>Visit</span>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/iamgauhar/tedious-view-7935" target="_blank">
+                            <button class="launcher">
+                                <span>Code</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="./images/myntra jpg.jpg" alt="">
+                    </div>
+                    <h3 class="project-title">Myntra Clone</h3>
+                    <p class="project-description">First Backend Project with NodeJS, ExpressJS and MongoDB. Main
+                        functionalities were :
+                        Register/Login using JWT, Sorting and Filtering in the backend, Cart and Wish List and many
+                        more.</p>
+                    <div class="project-tech-stack">
+                        <i class='bx bxl-html5' style='color:#ff3c00'></i>
+                        <i class='bx bxl-css3' style='color:#0039ff'></i>
+                        <i class='bx bxl-javascript' style='color:#ffdd00'></i>
+                        <i class='bx bxl-nodejs' style='color:#13e01f'></i>
+                        <i class='bx bxl-mongodb' style='color:#0ab914'></i>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://iamgauhar.github.io/Myntra-Clone/" target="_blank">
+                            <button class="launcher">
+                                <span>Visit</span>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/iamgauhar/Myntra-Clone" target="_blank">
+                            <button class="launcher">
+                                <span>Code</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="contact" class="contactSection">
+            <h1 class="title">Contact Me</h1>
+            <div class="layer">
+                <div class="contactArea">
+                    <div class="contactLeft contactSide" data-aos="zoom-in">
+                        <h2>Get in <span>touch</span></h2>
+                        <p class="mail">
+                            <ion-icon name="mail-open-outline"></ion-icon> iamgauhar@gmail.com
+                        </p>
+                        <p><ion-icon name="call-outline"></ion-icon> 91+ 8896039057</p>
+                        <div class="getInTouch">
+                            <a href="https://www.github.com/iamgauhar"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://www.linkedin.com/in/iamgauhar"><ion-icon
+                                    name="logo-linkedin"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://www.instagram.com/iamgauhar.in"><ion-icon
+                                    name="logo-instagram"></ion-icon></a>
+
+                        </div>
+                        <a href="https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download"><button
+                                class="buttonDownload">Resume</button></a>
+                    </div>
+                    <div class="contactRight contactSide" data-aos="zoom-in">
+                        <form action="#">
+                            <input type="text" placeholder="Name" autocomplete="off" required /><br />
+                            <input type="email" placeholder="Email" autocomplete="off" required /><br />
+                            <textarea cols="10" rows="5" placeholder="Message" autocomplete="off"
+                                required></textarea><br />
+
+                            <button class="send-btn">
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor"
+                                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>Send</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footerSection">
+                <p>Made with ❤️ by Mohammad Gauhar / @iamgauhar</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+        }
+    </script>
 
 
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./scripts/index.js"></script>
 
 </html>
-
-<!-- <div id="nav-menu" class="card">
-    <p><span>ABOUT ME</span></p>
-    <p><span>TECHNICAL SKILLS</span></p>
-    <p><span>STATISTICS</span></p>
-    <p><span>PROJECTS</span></p>
-    <p><span>HOVER ME</span></p>
-    <p><span>CONTACT ME</span></p>
-</div> -->
