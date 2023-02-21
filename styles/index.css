@@ -83,7 +83,7 @@ li {
 }
 .menu ul li a:hover {
   transform: translateY(-4px);
-  color: rgb(35, 1, 230);
+  color: #2301e6;
 }
 .header ion-icon {
   display: none;
@@ -179,7 +179,7 @@ li {
 
 .title {
   font-size: 36px;
-  color: rgb(72, 255, 0);
+  color: #2301e6;
   text-align: center;
   font-weight: normal;
 }
