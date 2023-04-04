@@ -417,7 +417,7 @@ button:hover {
   scale: 1.1;
 }
 
-.github-stats-card {
+#github-stats-card {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1041,7 +1041,7 @@ form textarea:focus {
     height: 120px;
   }
 
-  .github-stats-card {
+  #github-stats-card {
     justify-content: center;
     /* gap: 4rem; */
   }
