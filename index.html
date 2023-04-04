@@ -26,7 +26,7 @@
             <div class="logo">
                 <h1>MG<span style="color: #1cf72b;">.</span></h1>
             </div>
-            <div class="menu nav-menu">
+            <div class="menu nav-menu" id="nav-menu">
                 <ul class="menuList" onclick="closeMenu()">
                     <ion-icon id="close" name="close-outline" onclick="closeMenu()"></ion-icon>
                     <li class="nav-link home"><a href="#home">Home</a></li>
@@ -100,8 +100,8 @@
                     </div>
                 </div>
                 <div class="profile" data-aos="zoom-in">
-                    <p class="about-text"> <span class="strong-text">Hi!</span><br><br>
-                        My name is <strong>Mohammad Gauhar</strong>, and I am a full-stack web developer. I recently
+                    <p class="about-text" id="user-detail-intro"> <span class="strong-text">Hi!</span><br><br>
+                        My name is <strong id="user-detail-name">Mohammad Gauhar</strong>, and I am a full-stack web developer. I recently
                         graduated with a degree in Bachelor of
                         Computer Application and have also completed certification in web development over the past few
                         months. I am proficient
