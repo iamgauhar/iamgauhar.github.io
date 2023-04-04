@@ -181,7 +181,7 @@ li {
   font-size: 36px;
   color: #2301e6;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 #profile {
@@ -963,6 +963,7 @@ form textarea:focus {
   .title h1 {
     font-size: 28px;
     padding-top: 1rem;
+    /* font-weight: bold; */
   }
 
   .about {

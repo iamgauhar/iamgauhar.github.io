@@ -41,3 +41,24 @@ AOS.init();
 // };
 
 // nav();
+
+
+function sendEmail(email) {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "fw21.0693@gmail.com",
+    Password: "lkzdyimaymcobego",
+    To: 'iamgauhar@gmail.com',
+    From: email,
+    Subject: "This is the subject",
+    Body: "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+}
+
+document.querySelector("#send-mail").addEventListener("click", (e) => {
+  e.preventDefault()
+  const email = document.querySelector("#email").value
+  sendEmail(email)
+})
