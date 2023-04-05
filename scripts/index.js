@@ -21,29 +21,17 @@ const goTo = () => {
 };
 
 document.querySelector("#resume-button-2").addEventListener("click", () => {
-  // location.href = "https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download";
-  // window.open(
-  //   "https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download",
-  // );
-  // window.open(
-  //   "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link",
-  //   "_blank"
-  // );
+
+  window.open(
+    "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link",
+    "_blank"
+  );
 });
 
+
+
 AOS.init();
-// Navbar script
-// document.querySelector("canvas").style.position = "relative";
-// const nav = function () {
-//   document.querySelector(".menu-link").addEventListener("click", (e) => {
-//     e.preventDefault();
 
-//     document.querySelector(".menu-overlay").classList.toggle("open");
-//     document.querySelector(".menu").classList.toggle("open");
-//   });
-// };
-
-// nav();
 
 
 function sendEmail(email) {
