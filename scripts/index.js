@@ -24,12 +24,11 @@ document.querySelector("#resume").addEventListener("click", () => {
   // location.href = "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link";
   window.open(
     "https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download",
-    "_blank"
   );
-  window.open(
-    "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link",
-    "_blank"
-  );
+  // window.open(
+  //   "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link",
+  //   "_blank"
+  // );
 });
 
 AOS.init();
