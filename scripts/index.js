@@ -60,8 +60,8 @@ function sendEmail(email) {
   );
 }
 
-document.querySelector("#send-mail").addEventListener("click", (e) => {
-  e.preventDefault()
-  const email = document.querySelector("#email").value
-  sendEmail(email)
-})
+// document.querySelector("#send-mail").addEventListener("click", (e) => {
+//   e.preventDefault()
+//   const email = document.querySelector("#email").value
+//   sendEmail(email)
+// })
