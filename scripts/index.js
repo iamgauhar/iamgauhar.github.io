@@ -20,7 +20,7 @@ const goTo = () => {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 };
 
-document.querySelector("#resume").addEventListener("click", () => {
+document.querySelector("#resume-button-2").addEventListener("click", () => {
   location.href = "https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download";
   // window.open(
   //   "https://drive.google.com/u/0/uc?id=1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp&export=download",
