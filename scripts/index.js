@@ -23,7 +23,7 @@ const goTo = () => {
 document.querySelector("#resume-button-2").addEventListener("click", () => {
 
   window.open(
-    "https://drive.google.com/file/d/1xr0EwCPD00gk6ilTQ8BAvheR3HTUYnDp/view?usp=share_link",
+    "https://drive.google.com/file/d/1rBWPjKObkRzsPfa9bjihdLW50bOCpkoO/view?usp=share_link",
     "_blank"
   );
 });
