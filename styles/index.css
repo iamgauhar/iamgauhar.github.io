@@ -204,8 +204,9 @@ li {
 
 #sub-profile {
   font-size: 20px;
+  margin-top: 10px;
   margin-bottom: 60px;
-  width: 700px;
+  width: 750px;
 }
 
 #hire_me {
@@ -321,36 +322,37 @@ button:hover {
 } */
 
 .about-child {
+  gap: 2rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   position: relative;
 }
 
 .profile {
-  width: 50%;
   height: 100%;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #pic {
   height: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   height: 300px;
   width: 300px;
   overflow: hidden;
   margin: auto;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
     rgb(255, 255, 255) 0px 0px 0px 3px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
-  top: 56%;
-  transform: translateY(-50%);
+  /* top: 56%; */
+  /* transform: translateY(-50%); */
   transition: all 0.5s;
 }
 
@@ -368,8 +370,7 @@ button:hover {
 }
 
 .about-text {
-  font-size: 23px;
-  text-align: justify;
+  font-size: 22px;
   color: #fff;
 }
 
