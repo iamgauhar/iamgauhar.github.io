@@ -67,14 +67,14 @@ const AboutMe = () => {
                 <div className="grid md:grid-cols-12 mt-9">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
-                            Hi, I'm Mohammad Gauhar.
+                            Hi, I&apos;m Mohammad Gauhar.
                         </p>
                     </div>
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[550px]">
                             <p className="slide-up-and-fade">
-                                I'm Full-Stack Web Developer with 1+ year of
-                                professional experience, passionate about
+                                I&apos;m Full-Stack Web Developer with 1+ year
+                                of professional experience, passionate about
                                 turning ideas into creative, scalable, and
                                 high-performing web solutions. While I work
                                 across the stack, my strength lies in crafting
@@ -85,10 +85,11 @@ const AboutMe = () => {
                                 I focus on building applications that are not
                                 only visually polished but also accessible,
                                 performant, and aligned with real user and
-                                business needs. Whether it's designing clean UI
-                                components or developing robust backend APIs
-                                with Node.js and MongoDB, I strive to deliver
-                                solutions that are both elegant and effective.
+                                business needs. Whether it&apos;s designing
+                                clean UI components or developing robust backend
+                                APIs with Node.js and MongoDB, I strive to
+                                deliver solutions that are both elegant and
+                                effective.
                             </p>
                         </div>
                     </div>
