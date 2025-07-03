@@ -57,7 +57,7 @@ const Education = () => {
                 <SectionTitle title="My Education" />
 
                 <div className="grid gap-14">
-                    {MY_EDUCATION.map((item, i) => (
+                    {MY_EDUCATION.map((item) => (
                         <div key={item.place} className={`experience-item`}>
                             <p className="text-xl text-muted-foreground">
                                 {item.place}

@@ -67,14 +67,14 @@ const AboutMe = () => {
                 <div className="grid md:grid-cols-12 mt-9">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
-                            Hi, I&apos;m Mohammad Gauhar.
+                            Hi, I'm Mohammad Gauhar.
                         </p>
                     </div>
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[550px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m Full-Stack Web Developer with 1+ year
-                                of professional experience, passionate about
+                                I'm Full-Stack Web Developer with 1+ year of
+                                professional experience, passionate about
                                 turning ideas into creative, scalable, and
                                 high-performing web solutions. While I work
                                 across the stack, my strength lies in crafting
